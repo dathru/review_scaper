@@ -22,7 +22,6 @@ Selenium 기반으로 동작하며, 페이지네이션 처리, 중간 저장, CA
 git clone https://github.com/dathru/review_scaper.git
 cd review_scaper
 
----
 
 2. requirements.txt 다운로드
 
@@ -32,8 +31,6 @@ cd review_scaper
 ```powershell
 pip install -r requirements.txt
 pip freeze > requirements.txt
-
----
 
 최소 필요 라이브러리:
 * selenium
