@@ -22,17 +22,25 @@ Selenium 기반으로 동작하며, 페이지네이션 처리, 중간 저장, CA
 git clone https://github.com/dathru/review_scaper.git
 cd review_scaper
 
+---
+
 2. requirements.txt 다운로드
+
+---
 
 3. 라이브러리 설치
 ```powershell
 pip install -r requirements.txt
 pip freeze > requirements.txt
 
+---
+
 최소 필요 라이브러리:
 * selenium
 * webdriver-manager
 * pandas
+
+---
 
 4. 사용 방법
 1) review_scraper_배포용.py (혹은 코드가 담긴 파일)에서 상품 URL 수정:
