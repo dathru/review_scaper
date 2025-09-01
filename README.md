@@ -50,23 +50,23 @@ pip freeze > requirements.txt
 
 ### 사용 방법
 
-1) `review_scraper_배포용.py` (또는 코드 파일)에서 상품 URL 수정:
+#### 1. `review_scraper_배포용.py` (또는 코드 파일)에서 상품 URL 수정:
 
 ```python
 url = 'https://brand.naver.com/brandname/products/0000000000'
 ```
 
-2) 실행:
+#### 2. 실행:
 
 ```powershell
 python scraper.py
 ```
 
-3) 리뷰 데이터는 CSV 파일로 저장됩니다:
+#### 3. 리뷰 데이터는 CSV 파일로 저장됩니다:
 - 중간 저장: `reviews_{브랜드명}_{상품ID}_pN.csv`
 - 최종 저장: `reviews_{브랜드명}_{상품ID}.csv`
 
-4) CSV 결과 예시
+#### 4. CSV 결과 예시
 
 | page | author  | date      | rating | text                                 | option                                         |
 |------|---------|-----------|--------|--------------------------------------|------------------------------------------------|
