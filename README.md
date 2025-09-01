@@ -25,7 +25,7 @@ git clone https://github.com/dathru/review_scaper.git
 cd review_scaper
 ```
 
-다운로드
+#### 2. 다운로드
 
 Git 설치가 어려운 경우, GitHub 페이지에서 Download ZIP 버튼을 클릭하여 다운로드 후 압축을 풀어 사용 가능합니다.
 ```
