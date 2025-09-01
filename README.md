@@ -1,11 +1,11 @@
-# Naver SmartStore Review Scraper
+## Naver SmartStore Review Scraper
 
 네이버 **스마트스토어 상품 리뷰**를 자동으로 수집하는 파이썬 스크립트입니다.  
 Selenium 기반으로 동작하며, 페이지네이션 처리, 중간 저장, CAPTCHA 대응을 포함합니다.
 
 ---
 
-## 주요 기능
+### 주요 기능
 - 지정한 스마트스토어 상품 페이지의 리뷰를 최대 `2000 페이지`까지 수집 (수정가능)
 - 리뷰 중복 제거 및 자동 CSV 저장
 - 일정 간격마다 **중간 저장 파일** 생성 (`reviews_{brand}_{product_id}_pN.csv`)
@@ -15,7 +15,7 @@ Selenium 기반으로 동작하며, 페이지네이션 처리, 중간 저장, CA
 
 ---
 
-## 설치 방법
+### 설치 방법
 
 1. 저장소 클론
 ```bash
