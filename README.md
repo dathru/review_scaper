@@ -18,6 +18,37 @@ Selenium 기반으로 동작하며, 페이지네이션 처리, 중간 저장, CA
 ### 설치 방법
 
 1. 저장소 클론
-```bash
+```powershell
 git clone https://github.com/dathru/review_scaper.git
 cd review_scaper
+
+2. requirements.txt 다운로드
+
+3. 라이브러리 설치
+```powershell
+pip install -r requirements.txt
+pip freeze > requirements.txt
+
+최소 필요 라이브러리:
+* selenium
+* webdriver-manager
+* pandas
+
+4. 사용 방법
+1) review_scraper_배포용.py (혹은 코드가 담긴 파일)에서 상품 URL 수정:
+url = 'https://brand.naver.com/brandname/products/0000000000'
+
+2) 실행:
+```powershell
+python scraper.py
+
+3) 리뷰 데이터는 CSV 파일로 저장됩니다:
+reviews_{브랜드명}_{상품ID}_pN.csv (중간 저장)
+reviews_{브랜드명}_{상품ID}.csv (최종 저장)
+
+4) CSV 결과 예시
+
+| page | author  | date      | rating | text                                 | option                                         |
+|------|---------|-----------|--------|--------------------------------------|------------------------------------------------|
+| 1    | a****** | 25.08.01. | 5      | 촉촉하니 부드럽게 발림성 좋아요        | 피부타입중성, 주름, 트러블, 모공, 케어, 아주 좋아요, 흡수력, 아주 만족해요, 촉촉함, 촉촉해요 |
+| 1    | b****** | 25.08.11. | 5      | 아직 사용전인데 유명해서 구매해봤어요!! | 트러블케어, 잘 모르겠어요, 흡수력, 아주 만족해요, 촉촉함, 보통이에요 |
