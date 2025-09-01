@@ -25,6 +25,10 @@ git clone https://github.com/dathru/review_scaper.git
 cd review_scaper
 ```
 
+다운로드
+
+Git 설치가 어려운 경우, GitHub 페이지에서 Download ZIP 버튼을 클릭하여 다운로드 후 압축을 풀어 사용 가능합니다.
+```
 #### 2. requirements.txt 다운로드 및 설치
 필요한 라이브러리를 설치합니다:
 
